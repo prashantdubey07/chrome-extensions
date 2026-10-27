@@ -1,0 +1,91 @@
+JOB APPLICATION TRACKER
+Version: 0.2.1
+Publisher: Prashant Kumar Dubey
+Support email: prashantdubey194@gmail.com
+Developer website: https://github.com/prashantdubey07
+Recommended category: Workflow & Planning
+Language: English (United States), en-US
+
+SHORT DESCRIPTION
+Save opportunities, track every application, and remember your next follow-up.
+
+DETAILED STORE DESCRIPTION - COPY THIS
+Keep your job search organized, from saved opportunity to final decision.
+
+Job Application Tracker helps you record opportunities, track application stages, and keep your next step close at hand.
+
+Features:
+- Save a job title, company, listing URL, application date, and notes.
+- Capture the current page’s title and URL after clicking the toolbar icon, then confirm the details yourself.
+- Track Saved, Applied, Interview, Offer, Rejected, and Withdrawn stages.
+- Search opportunities and filter by application status.
+- Schedule an optional local follow-up reminder.
+- Export the currently searched/filtered jobs as CSV.
+- Export/import JSON backups, recover unfinished form drafts, and undo the most recent deletion during the current Chrome session.
+
+Your application records stay in your Chrome profile. There is no account, analytics, application backend, or automatic job submission.
+
+Reminders use Chrome notifications and require Chrome to be running with notifications allowed by your browser and operating system. Sleep or browser scheduling can delay reminders. Offer, Rejected, and Withdrawn stages stop follow-up reminders. Capturing a title/URL does not extract application forms or apply for a job.
+
+Requires desktop Chrome 116 or newer.
+
+SINGLE PURPOSE DESCRIPTION - COPY THIS
+Help users organize their job applications and remember application-related follow-ups.
+
+PERMISSION JUSTIFICATIONS - COPY INTO THE MATCHING FIELDS
+storage:
+Required to retain job opportunities, application stages/dates, notes, follow-up times, and notification-delivery markers locally, and temporary drafts/deletion recovery in Chrome session storage.
+
+sidePanel:
+Required to display and update the application tracker alongside job listings without leaving the page.
+
+activeTab:
+Required to read the current page’s title and URL only when the user invokes the extension and chooses to capture a job listing. It does not provide continuous browsing-history collection.
+
+alarms:
+Required to schedule the next job follow-up and recheck reminders on startup and periodic checks, including reminders that became due while Chrome was not running.
+
+notifications:
+Required to display the follow-up reminders the user schedules. Notifications contain the relevant job title and company and open the tracker when clicked.
+
+Host permission justification: Not applicable. No permanent host_permissions or optional_host_permissions are declared.
+
+REMOTE CODE
+Answer: No, I am not using remote code.
+Explanation: All executable extension code is included in the upload package. No remotely hosted JavaScript is loaded or evaluated.
+
+DATA USAGE - RECOMMENDED DASHBOARD CHECKBOXES FOR THIS BUILD
+[x] Personally identifiable information
+[ ] Health information
+[ ] Financial and payment information
+[ ] Authentication information
+[ ] Personal communications
+[ ] Location
+[x] Web history
+[ ] User activity
+[x] Website content
+
+Data handled and why:
+Job titles, companies, job-listing URLs, application stages/dates, notes, reminder times, record timestamps, reminder-delivery markers, and temporary drafts/undo records. A user action can read the active tab title and URL. Names/contact details may be included voluntarily in application notes.
+
+Clarification:
+Personally identifiable information covers user-supplied employment/application details and any contact information the user intentionally places in notes. No résumé, mailbox, or job-site account is accessed automatically.
+
+Storage/transmission:
+Saved records remain in the current Chrome profile; temporary drafts/undo use session storage. No automatic transmission to the developer, advertising, telemetry, or extension-operated cloud sync. User-directed copying, export, field filling, and opening websites can move data to the destination chosen by the user. Review the accompanying policy for exact scope.
+
+Data-use certifications: Use the three common certifications described at the start of all-listings.txt; all must match the unchanged product behavior.
+
+PRIVACY POLICY URL
+Status: PROPOSED - NOT HOSTED OR VERIFIED LIVE. DO NOT SUBMIT UNTIL PUBLISHED.
+Proposed URL: https://prashantdubey07.github.io/chrome-extensions/privacy/job-application-tracker.html
+Draft text: 03-job-application-tracker/privacy-policy.txt
+Hosting file: privacy-policy-site/privacy/job-application-tracker.html
+
+STORE ICON AND SCREENSHOTS
+Icon: 03-job-application-tracker/assets/store-icon-128.png (128x128 PNG, transparent padding)
+Screenshot 1: 03-job-application-tracker/assets/screenshot-01-overview.png (1280x800 PNG)
+Screenshot 2: 03-job-application-tracker/assets/screenshot-02-features.png (1280x800 PNG)
+Extension upload: 03-job-application-tracker/upload-package.zip (same verified 0.2.1 code; padded 128px icon)
+
+Developer attribution comes from the Publisher name in your Chrome Web Store account. A policy URL must point directly to a public policy page, not to the GitHub profile or a private repository.

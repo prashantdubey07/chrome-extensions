@@ -1,0 +1,88 @@
+BUG REPORT IN ONE CLICK
+Version: 0.2.1
+Publisher: Prashant Kumar Dubey
+Support email: prashantdubey194@gmail.com
+Developer website: https://github.com/prashantdubey07
+Recommended category: Developer Tools
+Language: English (United States), en-US
+
+SHORT DESCRIPTION
+Capture the page, add reproduction steps, and export a report ready to share.
+
+DETAILED STORE DESCRIPTION - COPY THIS
+Turn a browser problem into a report someone can act on.
+
+Bug Report in One Click captures the current page’s visible viewport and basic browser context, then helps you describe how to reproduce the issue. Review the screenshot, cover private details, and download a report ready to share yourself.
+
+Features:
+- Capture the visible page screenshot, URL, title, browser user-agent, viewport/screen size, pixel ratio, and capture time after granting page access through the toolbar icon.
+- Drag over private details to cover them with solid rectangles, undo the latest redaction, or reset redactions.
+- Add steps to reproduce, expected/actual behavior, severity, and frequency.
+- Save and search report text locally.
+- Download Markdown or copy a report.
+- Download a ZIP containing the current report and redacted PNG together.
+- Export/import text-record backups, recover unfinished report text, and undo the most recent deletion during the current Chrome session.
+
+No report is submitted automatically, and no screenshot is uploaded by the extension. Screenshots stay in panel memory and are lost when the panel closes or reloads; download them to keep a copy. Saved reports and backups contain report text, not screenshots.
+
+The extension does not collect console logs, network traffic, cookies, or browsing history. Screenshot capture is limited to the visible viewport, and protected browser pages may block access. Review URLs and screenshots for private details before sharing exported files.
+
+Requires desktop Chrome 116 or newer.
+
+SINGLE PURPOSE DESCRIPTION - COPY THIS
+Help users create reproducible bug reports from the current web page, including an optional redacted screenshot.
+
+PERMISSION JUSTIFICATIONS - COPY INTO THE MATCHING FIELDS
+storage:
+Required to save report text, reproduction details, environment metadata, and dates locally and recover unfinished report text/the most recent deletion during the current Chrome session. Screenshot pixels are not written to local or session storage.
+
+sidePanel:
+Required to keep the bug-report form and screenshot editor beside the page being reported.
+
+activeTab:
+Required for user-initiated access to the current page and captureVisibleTab after the user clicks the extension toolbar icon. Capture happens only when the user chooses Capture page & screenshot.
+
+scripting:
+Required to run packaged code that reads the current page title/URL and browser/viewport/screen metadata for the report. It does not read cookies, passwords, console logs, or network requests.
+
+Host permission justification: Not applicable. No permanent host_permissions or optional_host_permissions are declared.
+
+REMOTE CODE
+Answer: No, I am not using remote code.
+Explanation: All executable extension code is included in the upload package. No remotely hosted JavaScript is loaded or evaluated.
+
+DATA USAGE - RECOMMENDED DASHBOARD CHECKBOXES FOR THIS BUILD
+[x] Personally identifiable information
+[ ] Health information
+[ ] Financial and payment information
+[ ] Authentication information
+[ ] Personal communications
+[ ] Location
+[x] Web history
+[ ] User activity
+[x] Website content
+
+Data handled and why:
+On request: current page URL/title, visible-page screenshot pixels, browser user-agent, viewport/screen dimensions, pixel ratio and capture time. Users enter report titles, reproduction steps, expected/actual behavior, severity, frequency and environment notes. Redaction pointer coordinates/rectangles are used transiently in the screenshot editor, not as behavioral analytics. Report text/dates and temporary drafts/undo records stay locally; screenshot pixels stay in panel memory unless explicitly downloaded.
+
+Clarification:
+Personally identifiable information is disclosed because screenshots and report text may include names, email addresses, or other identifying details visible on the page. No device fingerprint, account ID, cookies, console logs, or network-monitoring data is collected. Redaction gestures are editor input, not general user-activity tracking.
+
+Storage/transmission:
+Saved records remain in the current Chrome profile; temporary drafts/undo use session storage. No automatic transmission to the developer, advertising, telemetry, or extension-operated cloud sync. User-directed copying, export, field filling, and opening websites can move data to the destination chosen by the user. Review the accompanying policy for exact scope.
+
+Data-use certifications: Use the three common certifications described at the start of all-listings.txt; all must match the unchanged product behavior.
+
+PRIVACY POLICY URL
+Status: PROPOSED - NOT HOSTED OR VERIFIED LIVE. DO NOT SUBMIT UNTIL PUBLISHED.
+Proposed URL: https://prashantdubey07.github.io/chrome-extensions/privacy/bug-report-in-one-click.html
+Draft text: 06-bug-report-in-one-click/privacy-policy.txt
+Hosting file: privacy-policy-site/privacy/bug-report-in-one-click.html
+
+STORE ICON AND SCREENSHOTS
+Icon: 06-bug-report-in-one-click/assets/store-icon-128.png (128x128 PNG, transparent padding)
+Screenshot 1: 06-bug-report-in-one-click/assets/screenshot-01-overview.png (1280x800 PNG)
+Screenshot 2: 06-bug-report-in-one-click/assets/screenshot-02-features.png (1280x800 PNG)
+Extension upload: 06-bug-report-in-one-click/upload-package.zip (same verified 0.2.1 code; padded 128px icon)
+
+Developer attribution comes from the Publisher name in your Chrome Web Store account. A policy URL must point directly to a public policy page, not to the GitHub profile or a private repository.

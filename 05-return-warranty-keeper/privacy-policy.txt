@@ -1,0 +1,34 @@
+PRIVACY POLICY: Return & Warranty Keeper
+Last updated: 27 October 2026
+Developer: Prashant Kumar Dubey
+Contact: prashantdubey194@gmail.com
+Developer profile: https://github.com/prashantdubey07
+
+1. Scope and purpose
+This policy describes version 0.2.1 of this Chrome extension. Help users remember return windows and warranty deadlines for purchases they choose to record.
+
+2. Information handled
+Item/store names, purchase dates, return/warranty dates, order/product URLs, reminder lead times, status, receipt/order references and notes, timestamps, notification-delivery markers, and temporary drafts/undo records. It handles purchase-related information but does not access bank accounts, payment credentials, shopping accounts, or inboxes.
+
+Free-text fields and selected/captured material may contain personal or sensitive information the user chooses to provide. Do not enter credentials or unnecessary sensitive information. The extension does not create a developer account or collect a persistent advertising identifier.
+
+3. How information is used
+Information is used to provide the features described above, including saving/restoring records, preparing requested output, and user-directed editing or exports. It is not used for analytics, advertising, profiling, creditworthiness, lending, or unrelated purposes. The extension's use of user data is limited to its described user-facing purpose in accordance with the Chrome Web Store User Data Policy, including the Limited Use requirements.
+
+4. Storage and retention
+Saved records are stored in chrome.storage.local in the current Chrome profile until the user deletes them or uninstalls the extension. Temporary draft and deletion-recovery information is kept in chrome.storage.session during the current browsing session and can be cleared by browser exit or extension reload/update. A single most-recently deleted item may remain in session storage to support Undo; it is not immediately erased from every temporary copy when Delete is clicked. Browser/operating-system backups are outside the extension's control.
+
+The extension does not use chrome.storage.sync. It does not add application-level encryption to local records or exports. Protect access to your browser profile and downloaded files. 
+
+5. Transmission, sharing, and third parties
+The extension does not automatically transmit saved records, captured content, or screenshots to the developer, an analytics provider, advertiser, data broker, or hosted AI service. There is no extension-operated server. Data is not sold.
+
+Users may export backups/calendar files and open saved product/order links. Exports are local files for manual use. Opening a link causes a normal browser request to the selected website; calendar files do not sync automatically. Destination websites and applications have their own practices; website URLs may contain identifying information.
+
+
+
+6. Your choices and deletion
+Use the extension's edit/delete controls to manage saved records. Where available, Clear unsaved draft clears temporary draft fields; Where was I? drafts can be emptied by clearing the workspace name and note. Browser exit or reloading/disabling the extension clears its temporary session data. Uninstalling removes extension-managed local records. Downloaded exports, clipboard contents, manually shared files, copied website data, and any copies you create outside the extension must be managed separately. Export backups before uninstalling if you want to keep saved records.
+
+7. Support and changes
+If you email support, the information you voluntarily send is used to respond and troubleshoot through the email providers involved. Do not send passwords or unredacted sensitive content. Contact prashantdubey194@gmail.com with privacy questions or requests about support correspondence. If the extension's practices change, this policy will be updated with a new date and the store disclosures must be updated to match.

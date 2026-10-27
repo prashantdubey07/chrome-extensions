@@ -1,0 +1,89 @@
+FORM COMPANION
+Version: 0.2.1
+Publisher: Prashant Kumar Dubey
+Support email: prashantdubey194@gmail.com
+Developer website: https://github.com/prashantdubey07
+Recommended category: Workflow & Planning
+Language: English (United States), en-US
+
+SHORT DESCRIPTION
+Save reusable answers, fill a field you choose, and keep your documents in order.
+
+DETAILED STORE DESCRIPTION - COPY THIS
+Spend less time typing the same answers into online forms.
+
+Form Companion keeps reusable answers and a document checklist beside your browser. Copy an answer, personalize a template, or fill a specific field that you choose.
+
+Features:
+- Save, search, edit, and copy reusable answers.
+- Add placeholders such as {{name}} and {{company}} and preview the completed answer.
+- Scan a page’s supported field labels after granting access through the toolbar icon.
+- Choose both a saved answer and a website field before filling it.
+- Keep a checklist of required documents without uploading the documents themselves.
+- Export/import JSON backups, recover unfinished text drafts, and undo the most recent deletion during the current Chrome session.
+
+The extension does not submit forms automatically. It excludes password fields and common payment/one-time-code fields from scanning, but this is not a universal sensitive-field detector. Review the selected field and the filled answer before submitting a website form.
+
+Supported fields are visible, enabled text/email/telephone/URL/search inputs and textareas in the top-level page. Cross-origin frames, shadow DOM, custom editors, and some complex forms are not supported.
+
+Answers and checklist records stay in your Chrome profile. Placeholder values stay in the open panel only. No account, AI service, analytics, or application backend is required. Avoid saving passwords or payment details as reusable answers.
+
+Requires desktop Chrome 116 or newer.
+
+SINGLE PURPOSE DESCRIPTION - COPY THIS
+Help users prepare and complete online forms using reusable answers, explicitly chosen field filling, and a required-document checklist.
+
+PERMISSION JUSTIFICATIONS - COPY INTO THE MATCHING FIELDS
+storage:
+Required to save reusable answers and document-checklist items locally, and to recover unfinished form text and the most recent deletion during the current Chrome session. Placeholder values and website field values are not stored as draft records.
+
+sidePanel:
+Required to keep reusable answers, template preparation, field selection, and the document checklist visible beside the online form the user is completing.
+
+activeTab:
+Required for temporary, user-initiated access to the current website after the user clicks the toolbar icon. Access is used only when the user requests field scanning or chosen-field filling; there is no permanent host access.
+
+scripting:
+Required to run packaged code in the current page’s isolated world to enumerate supported field labels/types, track the scanned elements, and set the value of the field the user explicitly chooses. The code does not submit the form or read existing field contents.
+
+Host permission justification: Not applicable. No permanent host_permissions or optional_host_permissions are declared.
+
+REMOTE CODE
+Answer: No, I am not using remote code.
+Explanation: All executable extension code is included in the upload package. No remotely hosted JavaScript is loaded or evaluated.
+
+DATA USAGE - RECOMMENDED DASHBOARD CHECKBOXES FOR THIS BUILD
+[x] Personally identifiable information
+[ ] Health information
+[ ] Financial and payment information
+[ ] Authentication information
+[ ] Personal communications
+[ ] Location
+[x] Web history
+[ ] User activity
+[x] Website content
+
+Data handled and why:
+Reusable answer names/text, template text, document/task labels and completion state, dates, temporary drafts/undo records, and user-entered placeholder values. On request it reads the current page URL, supported field labels/types, and element references to safely fill the chosen field. It does not read existing field values during scanning or upload documents.
+
+Clarification:
+Personally identifiable information covers names, email addresses, telephone numbers, and other identifying details users may intentionally enter into reusable answers or placeholder values. No account identifiers are extracted automatically.
+
+Storage/transmission:
+Saved records remain in the current Chrome profile; temporary drafts/undo use session storage. No automatic transmission to the developer, advertising, telemetry, or extension-operated cloud sync. User-directed copying, export, field filling, and opening websites can move data to the destination chosen by the user. Review the accompanying policy for exact scope.
+
+Data-use certifications: Use the three common certifications described at the start of all-listings.txt; all must match the unchanged product behavior.
+
+PRIVACY POLICY URL
+Status: PROPOSED - NOT HOSTED OR VERIFIED LIVE. DO NOT SUBMIT UNTIL PUBLISHED.
+Proposed URL: https://prashantdubey07.github.io/chrome-extensions/privacy/form-companion.html
+Draft text: 02-form-companion/privacy-policy.txt
+Hosting file: privacy-policy-site/privacy/form-companion.html
+
+STORE ICON AND SCREENSHOTS
+Icon: 02-form-companion/assets/store-icon-128.png (128x128 PNG, transparent padding)
+Screenshot 1: 02-form-companion/assets/screenshot-01-overview.png (1280x800 PNG)
+Screenshot 2: 02-form-companion/assets/screenshot-02-features.png (1280x800 PNG)
+Extension upload: 02-form-companion/upload-package.zip (same verified 0.2.1 code; padded 128px icon)
+
+Developer attribution comes from the Publisher name in your Chrome Web Store account. A policy URL must point directly to a public policy page, not to the GitHub profile or a private repository.

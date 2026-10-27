@@ -1,0 +1,85 @@
+WHERE WAS I?
+Version: 0.2.1
+Publisher: Prashant Kumar Dubey
+Support email: prashantdubey194@gmail.com
+Developer website: https://github.com/prashantdubey07
+Recommended category: Functionality & UI
+Language: English (United States), en-US
+
+SHORT DESCRIPTION
+Save your tabs and your next step. Come back with context.
+
+DETAILED STORE DESCRIPTION - COPY THIS
+Pick up where you left off, with the context you need.
+
+Where was I? saves selected web tabs as a named workspace, along with a note about what to do next. When you return, search your workspaces and reopen the saved pages together in a new window.
+
+Features:
+- Choose which web tabs to save from the current window.
+- Add a next-step note so you remember why you saved them.
+- Edit workspace names and notes, and pin important workspaces.
+- Search workspace names, notes, tab titles, and URLs.
+- Restore a workspace in a new window while keeping the saved copy.
+- Export/import JSON backups and undo the most recent deletion during the current Chrome session.
+- Recover unfinished workspace names and notes in the same browser window during the current session.
+
+Your workspaces stay in your Chrome profile. No account, analytics, or extension-operated cloud service is used.
+
+This extension saves URLs and notes, not scroll positions, unsent forms, login sessions, navigation history, or tab groups. Only regular HTTP/HTTPS tabs are supported. Chrome internal pages, local files, and incognito tabs are excluded.
+
+Requires desktop Chrome 116 or newer.
+
+SINGLE PURPOSE DESCRIPTION - COPY THIS
+Help users pause and resume browser work by saving selected web tabs together with a next-step note.
+
+PERMISSION JUSTIFICATIONS - COPY INTO THE MATCHING FIELDS
+tabs:
+Required to read titles and URLs for web tabs in the current window, show the tab-selection list, save the tabs the user chooses, and restore saved workspaces. It is not used to read the complete browsing-history database or page bodies.
+
+storage:
+Required to store workspaces, next-step notes, pin status, and dates in chrome.storage.local, and temporary drafts and deletion recovery in chrome.storage.session. The extension does not use chrome.storage.sync.
+
+sidePanel:
+Required to show the workspace manager beside the user’s current web page so they can select tabs, write a next-step note, and resume saved work.
+
+Host permission justification: Not applicable. No permanent host_permissions or optional_host_permissions are declared.
+
+REMOTE CODE
+Answer: No, I am not using remote code.
+Explanation: All executable extension code is included in the upload package. No remotely hosted JavaScript is loaded or evaluated.
+
+DATA USAGE - RECOMMENDED DASHBOARD CHECKBOXES FOR THIS BUILD
+[ ] Personally identifiable information
+[ ] Health information
+[ ] Financial and payment information
+[ ] Authentication information
+[ ] Personal communications
+[ ] Location
+[x] Web history
+[ ] User activity
+[x] Website content
+
+Data handled and why:
+Selected open-tab URLs and titles; workspace names, next-step notes, creation dates, pin status, and temporary drafts/undo records. Only the tabs the user selects are saved. The extension does not read page bodies or the complete browser-history database.
+
+Clarification:
+If your intended use includes storing personally identifying details in workspace notes, also disclose Personally identifiable information. Notes are free text; the extension does not extract a user identity or profile.
+
+Storage/transmission:
+Saved records remain in the current Chrome profile; temporary drafts/undo use session storage. No automatic transmission to the developer, advertising, telemetry, or extension-operated cloud sync. User-directed copying, export, field filling, and opening websites can move data to the destination chosen by the user. Review the accompanying policy for exact scope.
+
+Data-use certifications: Use the three common certifications described at the start of all-listings.txt; all must match the unchanged product behavior.
+
+PRIVACY POLICY URL
+Status: PROPOSED - NOT HOSTED OR VERIFIED LIVE. DO NOT SUBMIT UNTIL PUBLISHED.
+Proposed URL: https://prashantdubey07.github.io/chrome-extensions/privacy/where-was-i.html
+Draft text: 01-where-was-i/privacy-policy.txt
+Hosting file: privacy-policy-site/privacy/where-was-i.html
+
+STORE ICON AND SCREENSHOTS
+Icon: 01-where-was-i/assets/store-icon-128.png (128x128 PNG, transparent padding)
+Screenshot 1: 01-where-was-i/assets/screenshot-01-overview.png (1280x800 PNG)
+Screenshot 2: 01-where-was-i/assets/screenshot-02-features.png (1280x800 PNG)
+Extension upload: 01-where-was-i/upload-package.zip (same verified 0.2.1 code; padded 128px icon)
+
+Developer attribution comes from the Publisher name in your Chrome Web Store account. A policy URL must point directly to a public policy page, not to the GitHub profile or a private repository.

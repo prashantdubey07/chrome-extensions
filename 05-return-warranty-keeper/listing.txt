@@ -1,0 +1,91 @@
+RETURN & WARRANTY KEEPER
+Version: 0.2.1
+Publisher: Prashant Kumar Dubey
+Support email: prashantdubey194@gmail.com
+Developer website: https://github.com/prashantdubey07
+Recommended category: Shopping
+Language: English (United States), en-US
+
+SHORT DESCRIPTION
+Remember return windows and warranty dates before they slip away.
+
+DETAILED STORE DESCRIPTION - COPY THIS
+Keep return windows and warranty dates from slipping away.
+
+Return & Warranty Keeper gives you a local place to record purchases and the dates that matter. Confirm deadlines against the store’s policy, choose a reminder lead time, and keep receipt references close to the item.
+
+Features:
+- Save an item, store, purchase date, order/product URL, and notes.
+- Record a last return date, warranty end date, or both.
+- Capture the current page’s title and URL after clicking the toolbar icon, then confirm the purchase details yourself.
+- Choose reminders 1, 3, or 7 days before each deadline.
+- Search purchases and filter Active, Returned, and Archived records.
+- Export active deadlines as a calendar .ics file for manual import.
+- Export/import JSON backups, recover unfinished form drafts, and undo the most recent deletion during the current Chrome session.
+
+Purchase records stay in your Chrome profile. The extension does not connect to shopping accounts, read email receipts, process payments, or infer return eligibility. No account, analytics, or application backend is required.
+
+Chrome reminders require Chrome to be running and browser/operating-system notifications to be allowed. Sleep or browser scheduling may delay them. Active-purchase reminders are scheduled for 9 AM local time on the reminder day; Returned and Archived records stop reminders. Calendar exports are snapshots and do not sync automatically; imported reminder behavior depends on your calendar app.
+
+Requires desktop Chrome 116 or newer.
+
+SINGLE PURPOSE DESCRIPTION - COPY THIS
+Help users remember return windows and warranty deadlines for purchases they choose to record.
+
+PERMISSION JUSTIFICATIONS - COPY INTO THE MATCHING FIELDS
+storage:
+Required to store purchase records, return/warranty dates, reminder settings, order/receipt references, and notification-delivery markers locally, with temporary drafts/deletion recovery in session storage.
+
+sidePanel:
+Required to show the purchase/deadline manager beside an order or product page so the user can confirm and record details.
+
+activeTab:
+Required to read the current page title and URL only when the user invokes the extension and chooses to capture an order/product link. It is not used to read shopping-account data or payment forms.
+
+alarms:
+Required to schedule deadline reminders and recheck due reminders on startup and periodic checks, including reminders missed while Chrome was not running.
+
+notifications:
+Required to show the return-window and warranty reminders requested by the user. Notifications include the item and relevant deadline and open the purchase manager when clicked.
+
+Host permission justification: Not applicable. No permanent host_permissions or optional_host_permissions are declared.
+
+REMOTE CODE
+Answer: No, I am not using remote code.
+Explanation: All executable extension code is included in the upload package. No remotely hosted JavaScript is loaded or evaluated.
+
+DATA USAGE - RECOMMENDED DASHBOARD CHECKBOXES FOR THIS BUILD
+[x] Personally identifiable information
+[ ] Health information
+[x] Financial and payment information
+[ ] Authentication information
+[ ] Personal communications
+[ ] Location
+[x] Web history
+[ ] User activity
+[x] Website content
+
+Data handled and why:
+Item/store names, purchase dates, return/warranty dates, order/product URLs, reminder lead times, status, receipt/order references and notes, timestamps, notification-delivery markers, and temporary drafts/undo records. It handles purchase-related information but does not access bank accounts, payment credentials, shopping accounts, or inboxes.
+
+Clarification:
+Financial and payment information is disclosed for purchase/order and receipt-reference information, not payment-card collection or payment processing. Personally identifiable information covers identifying order/receipt references and any personal details the user chooses to add.
+
+Storage/transmission:
+Saved records remain in the current Chrome profile; temporary drafts/undo use session storage. No automatic transmission to the developer, advertising, telemetry, or extension-operated cloud sync. User-directed copying, export, field filling, and opening websites can move data to the destination chosen by the user. Review the accompanying policy for exact scope.
+
+Data-use certifications: Use the three common certifications described at the start of all-listings.txt; all must match the unchanged product behavior.
+
+PRIVACY POLICY URL
+Status: PROPOSED - NOT HOSTED OR VERIFIED LIVE. DO NOT SUBMIT UNTIL PUBLISHED.
+Proposed URL: https://prashantdubey07.github.io/chrome-extensions/privacy/return-warranty-keeper.html
+Draft text: 05-return-warranty-keeper/privacy-policy.txt
+Hosting file: privacy-policy-site/privacy/return-warranty-keeper.html
+
+STORE ICON AND SCREENSHOTS
+Icon: 05-return-warranty-keeper/assets/store-icon-128.png (128x128 PNG, transparent padding)
+Screenshot 1: 05-return-warranty-keeper/assets/screenshot-01-overview.png (1280x800 PNG)
+Screenshot 2: 05-return-warranty-keeper/assets/screenshot-02-features.png (1280x800 PNG)
+Extension upload: 05-return-warranty-keeper/upload-package.zip (same verified 0.2.1 code; padded 128px icon)
+
+Developer attribution comes from the Publisher name in your Chrome Web Store account. A policy URL must point directly to a public policy page, not to the GitHub profile or a private repository.
